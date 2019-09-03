@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+    .jumbotron {
+ background: url(https://mcdn.wallpapersafari.com/medium/60/68/UZgb36.jpg) fixed center no-repeat;
+ background-size: cover;
+}
+</style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>TextUtils</title>
+</head>
+<body class="jumbotron">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+    <a class="navbar-brand" href="http://127.0.0.1:8000/">TextUtils</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <button class="btn btn-info" href="http://127.0.0.1:8000/">Home <span class="sr-only">(current)</span></button>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="alert alert-dark alert-dismissible fade show container my-2" role="alert">
+    <strong>Welcome!</strong> to TextUtils Web and Analyze your text here. Go Ahead! - Created by Hardik Maru.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="container my-2">
+    <form action="/analyze" method="get">
+        <div class="form-group my-2">
+            <div class="p-3 mb-2 bg-secondary text-white"><h3>Enter your text here and Let Text
+                Utils do their MAGIC ::</h3></div>
+            <div class="p-3 mb-2 bg-dark text-white">
+            <textarea class="form-control my-2" id="t1" name="t1" rows="3" placeholder="Enter Your Text Here."></textarea>
+            </div>
+            <div class="p-3 mb-2 bg-secondary text-white">
+            <div class="custom-control custom-switch">
+                <input type="radio" class="custom-control-input" id="removepunctuation" name="removepunctuation">
+                <label class="custom-control-label" for="removepunctuation" >Remove
+                    Punctuations.</label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="radio" class="custom-control-input" id="uppercase1" name="uppercase">
+                <label class="custom-control-label" for="uppercase1">Convert into Uppercase.</label>
+            </div>
+                <div class="custom-control custom-switch">
+                <input type="radio" class="custom-control-input" id="lowercase" name="lowercase">
+                <label class="custom-control-label" for="lowercase">Convert into Lowercase.</label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="radio" class="custom-control-input" id="removedigits" name="removedigits">
+                <label class="custom-control-label" for="removedigits">Remove Digits.</label>
+            </div>
+                <div class="custom-control custom-switch">
+                <input type="radio" class="custom-control-input" id="countcharacters" name="countcharacters">
+                <label class="custom-control-label" for="countcharacters">Count the total characters.</label>
+            </div>
+                <div class="custom-control custom-switch">
+                <input type="radio" class="custom-control-input" id="countwords" name="countwords">
+                <label class="custom-control-label" for="countwords">Count total words.</label>
+            </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg btn-block my-2">Analyze Text</button>
+
+        </div>
+    </form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
